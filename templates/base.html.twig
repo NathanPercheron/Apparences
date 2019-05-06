@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+{% block stylesheets %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+{% endblock %}
+
+  {% block javascripts %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  {% endblock %}
+    </head>
+
+  <nav>
+    <div class="nav-wrapper blue-grey lighten-5">
+      <a href="#!" class="brand-logo" src=""></a>
+      <img src="https://zupimages.net/up/19/13/scdb.png" width="150" height="60"/>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+
+    <body>
+        {% block body %}{% endblock %}
+        
+    </body>
+</html>
