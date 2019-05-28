@@ -4,31 +4,67 @@
 {% block body %}
 
 <title>Apparences - accueil</title>
-
-
-
-  <br>
-  <br>
-
-        <div class="container">
-        <div class="row">
-      <div class="col s12 center">
-        <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
-      <h3>Site en cours de construction...</h3>
-      <p>Contacter l'entreprise<p>
-      <p>Email : fredduault@hotmail.com </p>
-      <p>Téléphone : </p>
+<br>
+      <div class="container">
+        <div class="col s12">
+            <img class="" width="1225" src="https://zupimages.net/up/19/13/scdb.png">
+        </div>
       </div>
+      <br>
+        <div class="section blue-grey lighten-5">
+      <div class="row container">
+        <h2 class="header">Site en cours de construction</h2>
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+          <p>Notre savoir faire</p>
+      <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Fabrication d'enseignes...</div>
+      <div class="collapsible-body"><span>Totems / Signialitiques</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Plasturgie</div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Métallerie</div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Lettres boîtiers...</div>
+      <div class="collapsible-body"><span>Lettres découpées / Lettres baquets / Lettres baignoire / Lettres Aluminium / Lettres Plexi / PVC... </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Eclairages LED...</div>
+      <div class="collapsible-body"><span>Néon / Eclairage bâtiments</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Croix pharmacie...</div>
+      <div class="collapsible-body"><span>Afficheurs de textes / Ecran 3D</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Impressions numérique...</div>
+      <div class="collapsible-body"><span>Flocages / Coverings / Véhicules / Vitrophanies</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Cartes de visite...</div>
+      <div class="collapsible-body"><span>Flyers / Autocolants</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Tout supports événementiel</div>
+    </li>
+  </ul>
       </div>
-      </div>
-      
+    </div>
+          <img class="" width="1225" src="https://zupimages.net/up/19/22/azq4.jpg">
+
 
   <script>
-    $(document).ready(function(){
-    $('.slider').slider();
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
   });
   </script>
+
+  <link href="{{ asset ('build/css/accueil.css') }}" type="text/css" rel="stylesheet" />
+
 
 {% endblock %}
